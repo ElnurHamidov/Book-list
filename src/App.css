@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+  height: 100px;
+  /* background: rgba(0, 255, 0, .2); */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 50px;
+  border: 1px solid grey;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header h1{
+  text-align: center;
+}
+
+.header-img{
+  width: 100px;
+  height: 100px;
+}
+
+.login-body{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-body > div:first-child{
+  flex: 0 1 700px;
+}
+
+.login-body > div:last-child{
+  flex: 0 1 500px;
+}
+
+.login-img{
+  width: 100%;
+}
+
+.form h3{
+  text-align: center;
+}
+
+.form label{
+  display: block;
+  margin: 10px 0px;
+}
+
+.form input{
+  width: 95%;
+  padding: 7px 30px;
+  outline: none;
+}
+
+.form{
+  padding: 20px;
+}
+
+.form div{
+  margin-top: 20px;
+}
+
+.form div button{
+  width: 70%;
+  padding: 5px 0px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.form-avatar{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.back1{
+  background: url('./images/back1.jpg') 5px 50% / 20px 20px no-repeat scroll;
+}
+
+.back2{
+  background: url('./images/back2.jpg') 5px 50% / 20px 20px no-repeat scroll;
+}
+
+span{
+  color:red;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.main-btn{
+  cursor: pointer;
+  width: 200px;
+  padding: 7px;
+}
+
+.book{
+  border: 1px solid grey;
+  margin: 10px auto;
+  padding: 5px 30px;
+  box-shadow: 0 0 5px #000;
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header.main{
+  width: 700px;
+  margin: 0 auto;
+}
+
+.add{
+  width: 400px;
+  margin: 0 auto;
+}
+
+.add label{
+  display: block;
+  margin: 10px 0px;
+}
+
+.add input{
+  padding: 5px;
+  outline: none;
+  width: 100%;
+}
+
+.add div{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.add button{
+  width: 70%;
+  cursor: pointer;
+}
+
+.add button:hover{
+  opacity: 0.5;
+}
+
+.icon{
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.icon:hover{
+  opacity: 0.5;
+}
+
+.book a{
+  color:black;
+}
