@@ -1,6 +1,6 @@
 import './App.css';
 import {useState} from 'react';
-import {Router, Routes, Route} from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import Login from './Login';
 import Registration from './Registration';
 import Main from './Main';
@@ -40,7 +40,7 @@ function App() {
     <Context.Provider value={obj}>
         <div className="wrapper">
 
-        <Router>
+       
           <Routes>
             <Route exact path="/" element={<Login />} />
             <Route path="/registration" element={<Registration />} />
@@ -49,7 +49,6 @@ function App() {
             <Route path="/edit" element={<Edit value={el}/>} />
             <Route path="*" element={<Error />} />
           </Routes>
-        </Router>
 
         </div>
     </Context.Provider>
