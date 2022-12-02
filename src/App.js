@@ -44,7 +44,7 @@ function App() {
           <Routes>
             <Route exact path="/books" element={<Login />} />
             <Route path="/registration" element={<Registration />} />
-            <Route path="/main" element={<Main />} />
+            <Route path="books/main" element={<Main />} />
             <Route path="/add" element={<Add />}/>
             <Route path="/edit" element={<Edit value={el}/>} />
             <Route path="*" element={<Error />} />
