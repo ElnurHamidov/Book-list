@@ -71,7 +71,7 @@ export default function Login(){
                         {formik.touched.password && formik.errors.password && <span>{formik.errors.password}</span>}
                         <div>
                             <button type='submit'>Registration</button>
-                            <Link to="/book-list">Back</Link>
+                            <Link to="/books">Back</Link>
                         </div>
                     </form>
                 </div>

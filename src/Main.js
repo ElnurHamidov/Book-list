@@ -28,7 +28,7 @@ export default function Main(){
                 <button className="main-btn" onClick={()=>window.location.href="/add"}>Add</button>
                 <button className='main-btn' onClick={()=>{
                     localStorage.clear();
-                    window.location.href='/book-list';
+                    window.location.href='/books';
                 }}>Log out</button>
             </div>
             <div className="main-body">
