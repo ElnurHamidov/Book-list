@@ -1,6 +1,6 @@
 import './App.css';
 import {useState} from 'react';
-import {HashRouter as Router, Routes, Route} from 'react-router-dom';
+import {Router, Routes, Route} from 'react-router-dom';
 import Login from './Login';
 import Registration from './Registration';
 import Main from './Main';
