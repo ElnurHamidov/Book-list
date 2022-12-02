@@ -1,6 +1,6 @@
 import './App.css';
 import {useState} from 'react';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {HashRouter as Router, Routes, Route} from 'react-router-dom';
 import Login from './Login';
 import Registration from './Registration';
 import Main from './Main';
@@ -42,9 +42,9 @@ function App() {
 
         <Router>
           <Routes>
-            <Route exact path="/book-list" element={<Login />} />
+            <Route exact path="/" element={<Login />} />
             <Route path="/registration" element={<Registration />} />
-            <Route path="/book-list/main" element={<Main />} />
+            <Route path="/main" element={<Main />} />
             <Route path="/add" element={<Add />}/>
             <Route path="/edit" element={<Edit value={el}/>} />
             <Route path="*" element={<Error />} />
