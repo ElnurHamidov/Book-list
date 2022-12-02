@@ -40,7 +40,6 @@ function App() {
     <Context.Provider value={obj}>
         <div className="wrapper">
 
-       
           <Routes>
             <Route exact path="/" element={<Login />} />
             <Route path="/registration" element={<Registration />} />
@@ -49,6 +48,7 @@ function App() {
             <Route path="/edit" element={<Edit value={el}/>} />
             <Route path="*" element={<Error />} />
           </Routes>
+
 
         </div>
     </Context.Provider>
