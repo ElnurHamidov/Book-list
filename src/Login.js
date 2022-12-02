@@ -45,7 +45,7 @@ export default function Login(){
                 }
                 localStorage.setItem('token' , json.token);
                 localStorage.setItem('username' , json.username);
-                window.location.href='/main';
+                window.location.href='/books/main';
             })
             .catch(err=>console.log(err))
 
