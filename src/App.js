@@ -41,11 +41,11 @@ function App() {
         <div className="wrapper">
 
           <Routes>
-            <Route exact path="/" element={<Login />} />
-            <Route path="/registration" element={<Registration />} />
-            <Route path="/main" element={<Main />} />
-            <Route path="/add" element={<Add />}/>
-            <Route path="/edit" element={<Edit value={el}/>} />
+            <Route exact path={process.env.PUBLIC_URL + '/'} element={<Login />} />
+            <Route path={process.env.PUBLIC_URL + '/registration'} element={<Registration />} />
+            <Route path={process.env.PUBLIC_URL + '/main'} element={<Main />} />
+            <Route path={process.env.PUBLIC_URL + '/add'} element={<Add />}/>
+            <Route path={process.env.PUBLIC_URL + '/edit'} element={<Edit value={el}/>} />
             <Route path="*" element={<Error />} />
           </Routes>
 
