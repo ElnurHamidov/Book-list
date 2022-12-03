@@ -1,6 +1,6 @@
 import './App.css';
 import {useState} from 'react';
-import { Routes, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Login from './Login';
 import Registration from './Registration';
 import Main from './Main';
@@ -40,6 +40,8 @@ function App() {
     <Context.Provider value={obj}>
         <div className="wrapper">
 
+        <Router>
+
           <Routes>
             <Route exact path={process.env.PUBLIC_URL + '/'} element={<Login />} />
             <Route path={process.env.PUBLIC_URL + '/registration'} element={<Registration />} />
@@ -49,6 +51,7 @@ function App() {
             <Route path="*" element={<Error />} />
           </Routes>
 
+        </Router>
 
         </div>
     </Context.Provider>
