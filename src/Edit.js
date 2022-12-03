@@ -76,7 +76,7 @@ export default function Edit(props){
                     {formik.touched.price && formik.errors.price && <span>{formik.errors.price}</span>}
                     <div>
                         <button type="submit">Edit</button>
-                        <AiOutlineArrowLeft className='icon'/>
+                        <AiOutlineArrowLeft className='icon' onClick={() => window.location.href="/main"}/>
                     </div>
                 </form>
             </div>
